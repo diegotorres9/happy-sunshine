@@ -30,3 +30,65 @@ input[type=email], input[type=password] {
     margin: 1rem 1rem;
     font-size: 18px;
 }
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background: $orange;
+    color: $icon-color;
+    svg {
+        padding: 1rem;
+    }
+}
+.create-your-own {
+    background: $create-your-own;
+    border-bottom: 5px solid lighten($create-your-own, 30%);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 1rem 0 1rem 0;
+    h2 {
+        font-size: 2rem;
+        padding: 1rem;
+    }
+    svg {
+        padding: 1rem;
+        cursor: pointer;
+    }
+}
+.breakfast {
+    background: $breakfast-menu;
+    border-bottom: 5px solid darken($breakfast-menu, 20%);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 1rem 0 1rem 0;
+    h2 {
+        font-size: 2rem;
+        padding: 1rem
+    }
+    svg {
+        padding: 1rem;
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}
+.lunch {
+    background: $lunch-menu;
+    border-bottom: 5px solid darken($lunch-menu, 20%);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 1rem 0 1rem 0;
+    h2 {
+        font-size: 2rem;
+        padding: 1rem;
+    }
+    svg {
+        padding: 1rem;
+        &:hover{
+            cursor: pointer;
+        }
+    }
+}

@@ -91,6 +91,72 @@ input[type=email], input[type=password] {
   font-size: 18px;
 }
 
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background: #fd823c;
+  color: #fff8cb;
+}
+header svg {
+  padding: 1rem;
+}
+
+.create-your-own {
+  background: #3acbaf;
+  border-bottom: 5px solid #b3ebe0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 1rem 0 1rem 0;
+}
+.create-your-own h2 {
+  font-size: 2rem;
+  padding: 1rem;
+}
+.create-your-own svg {
+  padding: 1rem;
+  cursor: pointer;
+}
+
+.breakfast {
+  background: #fff38b;
+  border-bottom: 5px solid #ffe825;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 1rem 0 1rem 0;
+}
+.breakfast h2 {
+  font-size: 2rem;
+  padding: 1rem;
+}
+.breakfast svg {
+  padding: 1rem;
+}
+.breakfast svg:hover {
+  cursor: pointer;
+}
+
+.lunch {
+  background: #ff9487;
+  border-bottom: 5px solid #ff3921;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 1rem 0 1rem 0;
+}
+.lunch h2 {
+  font-size: 2rem;
+  padding: 1rem;
+}
+.lunch svg {
+  padding: 1rem;
+}
+.lunch svg:hover {
+  cursor: pointer;
+}
+
 #greeting-container {
   display: flex;
   flex-direction: column;
@@ -110,6 +176,19 @@ input[type=email], input[type=password] {
   background: #Fed859;
   display: flex;
   flex-direction: column;
+}
+
+body {
+  background: #fffce7;
+}
+
+.menu-header {
+  width: 100%;
+  background: #ffd85a;
+}
+.menu-header h1 {
+  text-align: center;
+  padding: 1rem 0 1rem 0;
 }
 
 /*# sourceMappingURL=style.css.map */
