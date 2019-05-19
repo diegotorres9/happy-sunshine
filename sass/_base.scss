@@ -39,6 +39,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   table {
     border-collapse: collapse;
     border-spacing: 0; }
+
 // Fonts
 @import url('https://fonts.googleapis.com/css?family=Open+Sans|PT+Sans&display=swap');
 $ptSans: 'PT Sans', sans-serif;
@@ -47,6 +48,15 @@ $openSans: 'Open Sans', sans-serif;
 h1, h2, h3, h4, h5, h6 {
     font-family: $ptSans;
 }
+h1 {
+    font-size: 3em;
+}
 p, address {
     font-family: $openSans;
 }
+// Colors
+$blue: #4f9dc1;
+$yellow-font: #fffd46;
+$yellow-background: #Fed859;
+$login-btn-color: #39cbaf;
+$create-account-color: #fd823c;

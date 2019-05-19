@@ -48,11 +48,66 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "PT Sans", sans-serif;
 }
 
+h1 {
+  font-size: 3em;
+}
+
 p, address {
   font-family: "Open Sans", sans-serif;
 }
 
+.login-button {
+  background: #39cbaf;
+  height: 2rem;
+  color: #fff;
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  margin: 1rem 1rem;
+  height: 50px;
+  border: none;
+}
+.login-button:hover {
+  cursor: pointer;
+}
+
+.account-button {
+  background: #fd823c;
+  height: 2rem;
+  color: #fff;
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  margin: 1rem 1rem;
+  height: 50px;
+  border: none;
+}
+.account-button:hover {
+  cursor: pointer;
+}
+
+input[type=email], input[type=password] {
+  height: 2rem;
+  font-family: "Open Sans", sans-serif;
+  margin: 1rem 1rem;
+  font-size: 18px;
+}
+
 #greeting-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #4f9dc1;
+}
+#greeting-container h1 {
+  margin: 10px 10px;
+  color: #fff;
+}
+#greeting-container address {
+  margin: 10px 10px;
+  color: #fffd46;
+}
+
+#login-container {
+  background: #Fed859;
   display: flex;
   flex-direction: column;
 }

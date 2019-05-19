@@ -1,4 +1,19 @@
 #greeting-container {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    background: $blue;
+    h1 {
+        margin: 10px 10px;
+        color: #fff;
+    }
+    address {
+        margin: 10px 10px;
+        color: $yellow-font;
+    }
+}
+#login-container {
+    background: $yellow-background;
+    display: flex;
+    flex-direction: column;
 }
