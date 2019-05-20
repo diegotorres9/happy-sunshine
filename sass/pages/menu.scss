@@ -1,0 +1,11 @@
+body {
+    background: $background;
+}
+.menu-header {
+    width: 100%;
+    background: $menu-color;
+    h1 {
+        text-align: center;
+        padding: 1rem 0 1rem 0;
+    }
+}
