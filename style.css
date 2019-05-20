@@ -196,4 +196,25 @@ a {
   color: #fff8cb;
 }
 
+.pickup-options h2 {
+  font-size: 2rem;
+  background: #2b688b;
+  color: #fff;
+  padding: 1rem;
+}
+
+.tip-options h2 {
+  font-size: 2rem;
+  background: #3acbaf;
+  color: #fff;
+  padding: 1rem;
+}
+
+.payment-options h2 {
+  font-size: 2rem;
+  background: #fd823c;
+  color: #fff;
+  padding: 1rem;
+}
+
 /*# sourceMappingURL=style.css.map */
