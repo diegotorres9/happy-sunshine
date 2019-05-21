@@ -20,14 +20,22 @@
         <div class="orders"></div>
         <div class="pickup-options">
             <h2>Pick Up Time</h2>
-            <input type="radio" name="ASAP" id="pickupChoiceOne">
-            <label for="pickupChoiceOne">ASAP</label>
-            <input type="radio" name="15min" id="pickupChoiceTwo">
-            <label for="pickupChoiceTwo">15 Min</label>
-            <input type="radio" name="30min" id="pickupChoiceThree">
-            <label for="pickupChoiceThree">30 Min</label>
-            <input type="radio" name="1hour" id="pickupChoiceFour">
-            <label for="pickupChoiceFour">1 Hour</label>
+            <div class="pickup-radio-options">
+                <input type="radio" name="pickup-time" id="pickupChoiceOne" value="asap" checked>
+                <label for="pickupChoiceOne">ASAP</label>
+            </div>
+            <div class="pickup-radio-options">
+                <input type="radio" name="pickup-time" id="pickupChoiceTwo" value="15min">
+                <label for="pickupChoiceTwo">15 Min</label>
+            </div>
+            <div class="pickup-radio-options">
+                <input type="radio" name="pickup-time" id="pickupChoiceThree" value="30min">
+                <label for="pickupChoiceThree">30 Min</label>
+            </div>
+            <div class="pickup-radio-options">
+                <input type="radio" name="pickup-time" id="pickupChoiceFour" value="hour">
+                <label for="pickupChoiceFour">1 Hour</label>
+            </div>
         </div>
         <div class="tip-options">
             <h2>Tip Options</h2>

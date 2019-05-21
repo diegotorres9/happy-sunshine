@@ -7,10 +7,12 @@
     margin: 1rem 1rem;
     height: 50px;
     border: none;
-    &:hover{
+
+    &:hover {
         cursor: pointer;
     }
 }
+
 .account-button {
     background: $create-account-color;
     height: 2rem;
@@ -20,26 +22,32 @@
     margin: 1rem 1rem;
     height: 50px;
     border: none;
-    &:hover{
+
+    &:hover {
         cursor: pointer;
     }
 }
-input[type=email], input[type=password] {
+
+input[type=email],
+input[type=password] {
     height: 2rem;
     font-family: $openSans;
     margin: 1rem 1rem;
     font-size: 18px;
 }
+
 header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     background: $orange;
     color: $icon-color;
+
     svg {
         padding: 1rem;
     }
 }
+
 .create-your-own {
     background: $create-your-own;
     border-bottom: 5px solid lighten($create-your-own, 30%);
@@ -47,15 +55,18 @@ header {
     flex-direction: row;
     justify-content: space-between;
     margin: 1rem 0 1rem 0;
+
     h2 {
         font-size: 2rem;
         padding: 1rem;
     }
+
     svg {
         padding: 1rem;
         cursor: pointer;
     }
 }
+
 .breakfast {
     background: $breakfast-menu;
     border-bottom: 5px solid darken($breakfast-menu, 20%);
@@ -63,17 +74,21 @@ header {
     flex-direction: row;
     justify-content: space-between;
     margin: 1rem 0 1rem 0;
+
     h2 {
         font-size: 2rem;
         padding: 1rem
     }
+
     svg {
         padding: 1rem;
+
         &:hover {
             cursor: pointer;
         }
     }
 }
+
 .lunch {
     background: $lunch-menu;
     border-bottom: 5px solid darken($lunch-menu, 20%);
@@ -81,14 +96,62 @@ header {
     flex-direction: row;
     justify-content: space-between;
     margin: 1rem 0 1rem 0;
+
     h2 {
         font-size: 2rem;
         padding: 1rem;
     }
+
     svg {
         padding: 1rem;
-        &:hover{
+
+        &:hover {
             cursor: pointer;
         }
+    }
+}
+
+.pickup-radio-options {
+    input[type="radio"] {
+        opacity: 0;
+    }
+    input[type="radio"] + label::after {
+        content: none;
+    }
+    input[type="radio"]:checked + label::after {
+        content: "";
+    }
+    input[type="radio"]:focus + label::before {
+        outline: rgb(59, 153, 252) auto 5px;
+    }
+    label {
+        position: relative;
+        display: inline-block;
+        padding-left: 22px;
+    }
+    label::before, label::after {
+        content: "";
+        display: inline-block;
+        position: absolute;
+    }
+    label::before {
+        content: "";
+        height: 16px;
+        width: 16px;
+        border: 2px $pickup-color solid;
+        border-radius: 50%;
+        background: #fff;
+        left: 0px;
+        top: 3px;
+    }
+    label::after {
+        content: "";
+        height: 6px;
+        width: 9px;
+        border-left: 3px $pickup-color solid;
+        border-bottom: 3px $pickup-color solid;
+        transform: rotate(-45deg);
+        left: 4px;
+        top: 7px;
     }
 }
