@@ -1,24 +1,15 @@
-.pickup-options {
-    h2 {
-        font-size: 2rem;
-        background: $pickup-color;
-        color: #fff;
-        padding: 1rem;
-    }
+h2 {
+    font-size: 2rem;
+    background: $pickup-color;
+    color: #fff;
+    padding: 1rem;
 }
-.tip-options {
-    h2 {
-        font-size: 2rem;
-        background: $tip-color;
-        color: #fff;
-        padding: 1rem;
-    }
-}
-.payment-options {
-    h2 {
-        font-size: 2rem;
-        background: $payment-color;
-        color: #fff;
-        padding: 1rem;
+.pickup-options, .tip-options, .payment-options {
+    display: flex;
+    flex-direction: row;
+    margin: 1.5rem 0 1.5rem 0;
+    label {
+        font-family: $openSans;
+        font-size: 24px;
     }
 }

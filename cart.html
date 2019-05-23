@@ -1,60 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Happy Sunshine</title>
     <link rel="stylesheet" href="style.css">
-    <script defer src="https://use.fontawesome.com/releases/v5.8.2/js/all.js" integrity="sha384-DJ25uNYET2XCl5ZF++U8eNxPWqcKohUUBUpKGlNLMchM7q4Wjg2CUpjHLaL8yYPH" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.8.2/js/all.js"
+        integrity="sha384-DJ25uNYET2XCl5ZF++U8eNxPWqcKohUUBUpKGlNLMchM7q4Wjg2CUpjHLaL8yYPH" crossorigin="anonymous">
+    </script>
 </head>
+
 <body>
     <header>
-            <i class="fas fa-bars fa-3x menu"></i>
-            <i class="fas fa-shopping-cart fa-3x cart"></i>
+        <i class="fas fa-bars fa-3x menu"></i>
+        <a href="cart.html"><i class="fas fa-shopping-cart fa-3x cart"></i></a>
     </header>
     <section class="menu-header">
-            <h1>Order Review</h1>
+        <h1>Order Review</h1>
     </section>
     <section class="cart-options">
         <div class="orders"></div>
+        <h2>Pick Up Time</h2>
         <div class="pickup-options">
-            <h2>Pick Up Time</h2>
-            <div class="pickup-radio-options">
+            <div class="radio-options">
                 <input type="radio" name="pickup-time" id="pickupChoiceOne" value="asap" checked>
                 <label for="pickupChoiceOne">ASAP</label>
             </div>
-            <div class="pickup-radio-options">
+            <div class="radio-options">
                 <input type="radio" name="pickup-time" id="pickupChoiceTwo" value="15min">
                 <label for="pickupChoiceTwo">15 Min</label>
             </div>
-            <div class="pickup-radio-options">
+            <div class="radio-options">
                 <input type="radio" name="pickup-time" id="pickupChoiceThree" value="30min">
                 <label for="pickupChoiceThree">30 Min</label>
             </div>
-            <div class="pickup-radio-options">
+            <div class="radio-options">
                 <input type="radio" name="pickup-time" id="pickupChoiceFour" value="hour">
                 <label for="pickupChoiceFour">1 Hour</label>
             </div>
         </div>
+        <h2>Tip Options</h2>
         <div class="tip-options">
-            <h2>Tip Options</h2>
-            <input type="radio" name="15percent" id="tipChoiceOne">
-            <label for="tipChoiceOne">15%</label>
-            <input type="radio" name="20percent" id="tipChoiceTwo">
-            <label for="tipChoiceTwo">20%</label>
-            <input type="radio" name="25percent" id="tipChoiceThree">
-            <label for="tipChoiceThree">25%</label>
-            <label for="tipChoiceFour">Other</label>
-            <input type="text" name="other" id="tipChoiceFour">
+            <div class="radio-options">
+                <input type="radio" name="tip" id="tipChoiceOne" value="15percent">
+                <label for="tipChoiceOne">15%</label>
+            </div>
+            <div class="radio-options">
+                <input type="radio" name="tip" id="tipChoiceTwo" value="20percent">
+                <label for="tipChoiceTwo">20%</label>
+            </div>
+            <div class="radio-options">
+                <input type="radio" name="tip" id="tipChoiceThree" value="25percent">
+                <label for="tipChoiceThree">25%</label>
+            </div>
+            <div class="radio-options">
+                <input type="radio" name="tip" id="tipChoiceFour">
+                <label for="tipChoiceFour">Other</label>
+            </div>
         </div>
+        <h2>Payment Options</h2>
         <div class="payment-options">
-            <h2>Payment Options</h2>
-            <input type="radio" name="cash" id="paymentChoiceOne">
-            <label for="paymentChoiceOne">Pay With Cash</label>
-            <input type="radio" name="card" id="paymentChoiceTwo">
-            <label for="paymentChoiceTwo">Pay With Card</label>
+            <div class="radio-options">
+                <input type="radio" name="payment" id="paymentChoiceOne" value="cash">
+                <label for="paymentChoiceOne">Pay With Cash</label>
+            </div>
+            <div class="radio-options">
+                <input type="radio" name="payment" id="paymentChoiceTwo" value="card">
+                <label for="paymentChoiceTwo">Pay With Card</label>
+            </div>
         </div>
     </section>
 </body>
+
 </html>

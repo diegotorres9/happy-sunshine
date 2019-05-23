@@ -129,23 +129,23 @@ header {
     .lunch svg:hover {
       cursor: pointer; }
 
-.pickup-radio-options input[type="radio"] {
+.radio-options input[type="radio"] {
   opacity: 0; }
-.pickup-radio-options input[type="radio"] + label::after {
+.radio-options input[type="radio"] + label::after {
   content: none; }
-.pickup-radio-options input[type="radio"]:checked + label::after {
+.radio-options input[type="radio"]:checked + label::after {
   content: ""; }
-.pickup-radio-options input[type="radio"]:focus + label::before {
+.radio-options input[type="radio"]:focus + label::before {
   outline: #3b99fc auto 5px; }
-.pickup-radio-options label {
+.radio-options label {
   position: relative;
   display: inline-block;
   padding-left: 22px; }
-.pickup-radio-options label::before, .pickup-radio-options label::after {
+.radio-options label::before, .radio-options label::after {
   content: "";
   display: inline-block;
   position: absolute; }
-.pickup-radio-options label::before {
+.radio-options label::before {
   content: "";
   height: 16px;
   width: 16px;
@@ -154,7 +154,7 @@ header {
   background: #fff;
   left: 0px;
   top: 3px; }
-.pickup-radio-options label::after {
+.radio-options label::after {
   content: "";
   height: 6px;
   width: 9px;
@@ -195,22 +195,18 @@ a {
   text-decoration: none;
   color: #fff8cb; }
 
-.pickup-options h2 {
+h2 {
   font-size: 2rem;
   background: #2b688b;
   color: #fff;
   padding: 1rem; }
 
-.tip-options h2 {
-  font-size: 2rem;
-  background: #3acbaf;
-  color: #fff;
-  padding: 1rem; }
-
-.payment-options h2 {
-  font-size: 2rem;
-  background: #fd823c;
-  color: #fff;
-  padding: 1rem; }
+.pickup-options, .tip-options, .payment-options {
+  display: flex;
+  flex-direction: row;
+  margin: 1.5rem 0 1.5rem 0; }
+  .pickup-options label, .tip-options label, .payment-options label {
+    font-family: "Open Sans", sans-serif;
+    font-size: 24px; }
 
 /*# sourceMappingURL=style.css.map */
