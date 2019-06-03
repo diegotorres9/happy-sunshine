@@ -4,6 +4,9 @@ h2 {
     color: #fff;
     padding: 1rem;
 }
+svg path{
+    fill: $icon-color;
+}
 .pickup-options, .tip-options, .payment-options {
     display: flex;
     flex-direction: row;

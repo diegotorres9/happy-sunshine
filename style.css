@@ -1,212 +1,60 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
+/*
+Error: File to import not found or unreadable: animations.
+        on line 3 of sass/main.scss
+
+1: @import 'base';
+2: @import 'components';
+3: @import 'animations';
+4: 
+5: // Pages
+6: @import 'pages/index.scss';
+7: @import 'pages/menu.scss';
+8: @import 'pages/cart.scss';
+
+Backtrace:
+sass/main.scss:3
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.5/lib/sass/tree/import_node.rb:67:in `rescue in import'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.5/lib/sass/tree/import_node.rb:44:in `import'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.5/lib/sass/tree/import_node.rb:28:in `imported_file'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.5/lib/sass/tree/import_node.rb:37:in `css_import?'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:314:in `visit_import'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.5/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.5/lib/sass/stack.rb:79:in `block in with_base'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.5/lib/sass/stack.rb:135:in `with_frame'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.5/lib/sass/stack.rb:79:in `with_base'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:162:in `visit'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.5/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.5/lib/sass/tree/visitors/base.rb:52:in `map'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.5/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:171:in `block in visit_children'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:170:in `visit_children'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.5/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:190:in `visit_root'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.5/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:161:in `visit'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:10:in `visit'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.5/lib/sass/tree/root_node.rb:36:in `css_tree'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.5/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.5/lib/sass/engine.rb:389:in `_render_with_sourcemap'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.5/lib/sass/engine.rb:307:in `render_with_sourcemap'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.5/lib/sass/plugin/compiler.rb:462:in `update_stylesheet'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.5/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.5/lib/sass/plugin/compiler.rb:209:in `each'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.5/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.5/lib/sass/plugin/compiler.rb:443:in `on_file_changed'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.5/lib/sass/plugin/compiler.rb:320:in `block in watch'
+/Library/Ruby/Gems/2.3.0/gems/sass-listen-4.0.0/lib/sass-listen/event/config.rb:23:in `call'
+/Library/Ruby/Gems/2.3.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:115:in `_process_changes'
+/Library/Ruby/Gems/2.3.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:19:in `block in loop_for'
+/Library/Ruby/Gems/2.3.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop'
+/Library/Ruby/Gems/2.3.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop_for'
+/Library/Ruby/Gems/2.3.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:84:in `_wait_for_changes'
+/Library/Ruby/Gems/2.3.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:42:in `block in setup'
+/Library/Ruby/Gems/2.3.0/gems/sass-listen-4.0.0/lib/sass-listen/internals/thread_pool.rb:6:in `block in add'
 */
-@import url("https://fonts.googleapis.com/css?family=Open+Sans|PT+Sans&display=swap");
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline; }
-
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
-  display: block; }
-
-body {
-  line-height: 1; }
-
-ol, ul {
-  list-style: none; }
-
-blockquote, q {
-  quotes: none; }
-
-blockquote:before, blockquote:after {
-  content: '';
-  content: none; }
-
-q:before, q:after {
-  content: '';
-  content: none; }
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0; }
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: "PT Sans", sans-serif; }
-
-h1 {
-  font-size: 3em; }
-
-p, address {
-  font-family: "Open Sans", sans-serif; }
-
-.login-button {
-  background: #39cbaf;
-  height: 2rem;
-  color: #fff;
-  font-family: "Open Sans", sans-serif;
-  font-size: 18px;
-  margin: 1rem 1rem;
-  height: 50px;
-  border: none; }
-  .login-button:hover {
-    cursor: pointer; }
-
-.account-button {
-  background: #fd823c;
-  height: 2rem;
-  color: #fff;
-  font-family: "Open Sans", sans-serif;
-  font-size: 18px;
-  margin: 1rem 1rem;
-  height: 50px;
-  border: none; }
-  .account-button:hover {
-    cursor: pointer; }
-
-input[type=email],
-input[type=password] {
-  height: 2rem;
-  font-family: "Open Sans", sans-serif;
-  margin: 1rem 1rem;
-  font-size: 18px; }
-
-header {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  background: #fd823c;
-  color: #fff8cb; }
-  header svg {
-    padding: 1rem; }
-
-.create-your-own {
-  background: #3acbaf;
-  border-bottom: 5px solid #b3ebe0;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin: 1rem 0 1rem 0; }
-  .create-your-own h2 {
-    font-size: 2rem;
-    padding: 1rem; }
-  .create-your-own svg {
-    padding: 1rem;
-    cursor: pointer; }
-
-.breakfast {
-  background: #fff38b;
-  border-bottom: 5px solid #ffe825;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin: 1rem 0 1rem 0; }
-  .breakfast h2 {
-    font-size: 2rem;
-    padding: 1rem; }
-  .breakfast svg {
-    padding: 1rem; }
-    .breakfast svg:hover {
-      cursor: pointer; }
-
-.lunch {
-  background: #ff9487;
-  border-bottom: 5px solid #ff3921;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin: 1rem 0 1rem 0; }
-  .lunch h2 {
-    font-size: 2rem;
-    padding: 1rem; }
-  .lunch svg {
-    padding: 1rem; }
-    .lunch svg:hover {
-      cursor: pointer; }
-
-.radio-options input[type="radio"] {
-  opacity: 0; }
-.radio-options input[type="radio"] + label::after {
-  content: none; }
-.radio-options input[type="radio"]:checked + label::after {
-  content: ""; }
-.radio-options input[type="radio"]:focus + label::before {
-  outline: #3b99fc auto 5px; }
-.radio-options label {
-  position: relative;
-  display: inline-block;
-  padding-left: 22px; }
-.radio-options label::before, .radio-options label::after {
-  content: "";
-  display: inline-block;
-  position: absolute; }
-.radio-options label::before {
-  content: "";
-  height: 16px;
-  width: 16px;
-  border: 2px #2b688b solid;
-  border-radius: 50%;
-  background: #fff;
-  left: 0px;
-  top: 3px; }
-.radio-options label::after {
-  content: "";
-  height: 6px;
-  width: 9px;
-  border-left: 3px #2b688b solid;
-  border-bottom: 3px #2b688b solid;
-  transform: rotate(-45deg);
-  left: 4px;
-  top: 7px; }
-
-#greeting-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background: #4f9dc1; }
-  #greeting-container h1 {
-    margin: 10px 10px;
-    color: #fff; }
-  #greeting-container address {
-    margin: 10px 10px;
-    color: #fffd46; }
-
-#login-container {
-  background: #Fed859;
-  display: flex;
-  flex-direction: column; }
-
-body {
-  background: #fffce7; }
-
-.menu-header {
-  width: 100%;
-  background: #ffd85a; }
-  .menu-header h1 {
-    text-align: center;
-    padding: 1rem 0 1rem 0; }
-
-a {
-  text-decoration: none;
-  color: #fff8cb; }
-
-h2 {
-  font-size: 2rem;
-  background: #2b688b;
-  color: #fff;
-  padding: 1rem; }
-
-.pickup-options, .tip-options, .payment-options {
-  display: flex;
-  flex-direction: row;
-  margin: 1.5rem 0 1.5rem 0; }
-  .pickup-options label, .tip-options label, .payment-options label {
-    font-family: "Open Sans", sans-serif;
-    font-size: 24px; }
-
-/*# sourceMappingURL=style.css.map */
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: File to import not found or unreadable: animations.\A         on line 3 of sass/main.scss\A \A 1: @import 'base';\A 2: @import 'components';\A 3: @import 'animations';\A 4: \A 5: // Pages\A 6: @import 'pages/index.scss';\A 7: @import 'pages/menu.scss';\A 8: @import 'pages/cart.scss';"; }

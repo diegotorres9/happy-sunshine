@@ -59,6 +59,7 @@ header {
     h2 {
         font-size: 2rem;
         padding: 1rem;
+        background: none;
     }
 
     svg {
@@ -77,7 +78,8 @@ header {
 
     h2 {
         font-size: 2rem;
-        padding: 1rem
+        padding: 1rem;
+        background: none;
     }
 
     svg {
@@ -100,6 +102,7 @@ header {
     h2 {
         font-size: 2rem;
         padding: 1rem;
+        background: none;
     }
 
     svg {
@@ -122,12 +125,12 @@ header {
         content: "";
     }
     input[type="radio"]:focus + label::before {
-        outline: rgb(59, 153, 252) auto 5px;
+        outline: $pickup-color auto 5px;
     }
     label {
         position: relative;
         display: inline-block;
-        padding-left: 22px;
+        padding-left: 25px;
     }
     label::before, label::after {
         content: "";
@@ -154,4 +157,41 @@ header {
         left: 4px;
         top: 7px;
     }
+}
+
+nav {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    max-width: 500px;
+    transform: translateX(-100%);
+    transition: transform .8s cubic-bezier(.07, .30, .25, 1);
+    top: 0;
+    left: 0;
+    z-index: 1;
+    ul {
+        li {
+            font-size: 24px;
+            padding: 2rem;
+            background: $login-btn-color;
+            &:nth-of-type(2) {
+                background: darken($login-btn-color, 10%);
+            }
+            &:nth-of-type(3) {
+                background: darken($login-btn-color, 20%);
+            }
+            &:nth-of-type(4) {
+                background: darken($login-btn-color, 30%);
+            }
+        }
+        a {
+            text-decoration: none;
+            color: #fff;
+        }
+    }
+}
+
+// Class for opening menu
+.nav-open {
+    transform: translateX(0);
 }
