@@ -86,51 +86,67 @@ header {
     padding: 1rem; }
 
 .create-your-own {
-  background: #3acbaf;
-  border-bottom: 5px solid #b3ebe0;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin: 1rem 0 1rem 0; }
-  .create-your-own h2 {
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 1rem; }
+  .create-your-own .accordion__header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background: #3acbaf;
+    width: 475px;
+    height: 70px;
     font-size: 2rem;
-    padding: 1rem;
-    background: none; }
-  .create-your-own svg {
-    padding: 1rem;
-    cursor: pointer; }
+    font-family: "Open Sans", sans-serif;
+    border: none;
+    border-bottom: 6px solid #217e6c; }
+    .create-your-own .accordion__header svg path {
+      fill: #000; }
 
 .breakfast {
-  background: #fff38b;
-  border-bottom: 5px solid #ffe825;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin: 1rem 0 1rem 0; }
-  .breakfast h2 {
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 1rem; }
+  .breakfast .accordion__header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff38b;
+    width: 475px;
+    height: 70px;
     font-size: 2rem;
-    padding: 1rem;
-    background: none; }
-  .breakfast svg {
-    padding: 1rem; }
-    .breakfast svg:hover {
-      cursor: pointer; }
+    font-family: "Open Sans", sans-serif;
+    border: none;
+    border-bottom: 6px solid #ffe825; }
+    .breakfast .accordion__header svg path {
+      fill: #000; }
 
 .lunch {
-  background: #ff9487;
-  border-bottom: 5px solid #ff3921;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin: 1rem 0 1rem 0; }
-  .lunch h2 {
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 1rem; }
+  .lunch .accordion__header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background: #ff9487;
+    width: 475px;
+    height: 70px;
     font-size: 2rem;
-    padding: 1rem;
-    background: none; }
-  .lunch svg {
-    padding: 1rem; }
-    .lunch svg:hover {
-      cursor: pointer; }
+    font-family: "Open Sans", sans-serif;
+    border: none;
+    border-bottom: 6px solid #ff3921; }
+    .lunch .accordion__header svg path {
+      fill: #000; }
 
 .radio-options input[type="radio"] {
   opacity: 0; }
