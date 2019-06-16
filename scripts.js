@@ -19,3 +19,17 @@ function closemenu(event) {
   menu.classList.remove("nav-open");
   menuOpen.classList.remove("spin");
 }
+// Accordion Open and Closing
+var accordions = document.querySelectorAll(".accordion__header");
+
+accordions.forEach((accordion) => {
+    accordion.addEventListener('click', () => {
+        var content =accordion.nextElementSibling;
+        if(content.style.maxHeight){
+            content.style.maxHeight = null;
+        } else {
+            content.style.maxHeight = content.scrollHeight + "px";
+        }
+        event.preventDefault();
+    });
+});
