@@ -1,61 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Happy Sunshine</title>
     <link rel="stylesheet" href="style.css">
-    <script defer src="https://use.fontawesome.com/releases/v5.8.2/js/all.js" integrity="sha384-DJ25uNYET2XCl5ZF++U8eNxPWqcKohUUBUpKGlNLMchM7q4Wjg2CUpjHLaL8yYPH" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.8.2/js/all.js"
+        integrity="sha384-DJ25uNYET2XCl5ZF++U8eNxPWqcKohUUBUpKGlNLMchM7q4Wjg2CUpjHLaL8yYPH" crossorigin="anonymous">
+    </script>
 </head>
+
 <body>
     <header>
-            <svg style="width:48px;height:48px" viewBox="0 0 24 24" class="menu-open">
-                    <path fill="#00695C" d="M3,6H21V8H3V6M3,11H21V13H3V11M3,16H21V18H3V16Z" />
-                </svg>
-                <nav class="menu" aria-label="Main menu">
-                    <svg style="width:48px;height:48px" viewBox="0 0 24 24" class="menu-close">
-                        <path fill="#000000"
-                            d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z" />
-                    </svg>
-                    <ul>
-                        <li><a href="menu.html">Menu</a></li>
-                        <li><a href="#">Account</a></li>
-                        <li><a href="#">Past Orders</a></li>
-                        <li><a href="#">Favorites</a></li>
-                    </ul>
-                </nav>
+        <svg style="width:48px;height:48px" viewBox="0 0 24 24" class="menu-open">
+            <path fill="#00695C" d="M3,6H21V8H3V6M3,11H21V13H3V11M3,16H21V18H3V16Z" />
+        </svg>
+        <nav class="menu" aria-label="Main menu">
+            <svg style="width:48px;height:48px" viewBox="0 0 24 24" class="menu-close">
+                <path fill="#000000"
+                    d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z" />
+            </svg>
+            <ul>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="#">Account</a></li>
+                <li><a href="#">Past Orders</a></li>
+                <li><a href="#">Favorites</a></li>
+            </ul>
+        </nav>
         <a href="cart.html"><i class="fas fa-shopping-cart fa-3x cart"></i></a>
     </header>
     <section class="menu-header">
         <h1>Menu</h1>
     </section>
     <section id="food">
-        <div class="create-your-own">
-            <button class="accordion__header">
+        <div class="accordion__item">
+            <button class="accordion__header create-your-own">
                 Create Your Own
-                <svg width="32" height="32" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M1683 808l-742 741q-19 19-45 19t-45-19l-742-741q-19-19-19-45.5t19-45.5l166-165q19-19 45-19t45 19l531 531 531-531q19-19 45-19t45 19l166 165q19 19 19 45.5t-19 45.5z"/></svg>
+                <svg width="32" height="32" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M1683 808l-742 741q-19 19-45 19t-45-19l-742-741q-19-19-19-45.5t19-45.5l166-165q19-19 45-19t45 19l531 531 531-531q19-19 45-19t45 19l166 165q19 19 19 45.5t-19 45.5z" />
+                </svg>
             </button>
         </div>
-        <div class="breakfast">
-            <button class="accordion__header">
+        <div class="accordion__item">
+            <button class="accordion__header breakfast">
                 Breakfast
-                <svg width="32" height="32" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M1683 808l-742 741q-19 19-45 19t-45-19l-742-741q-19-19-19-45.5t19-45.5l166-165q19-19 45-19t45 19l531 531 531-531q19-19 45-19t45 19l166 165q19 19 19 45.5t-19 45.5z"/></svg>
+                <svg width="32" height="32" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M1683 808l-742 741q-19 19-45 19t-45-19l-742-741q-19-19-19-45.5t19-45.5l166-165q19-19 45-19t45 19l531 531 531-531q19-19 45-19t45 19l166 165q19 19 19 45.5t-19 45.5z" />
+                </svg>
             </button>
             <ul class="accordion__content">
-                <li>
-                    French Toast
-                    <svg width="32" height="32" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M1683 808l-742 741q-19 19-45 19t-45-19l-742-741q-19-19-19-45.5t19-45.5l166-165q19-19 45-19t45 19l531 531 531-531q19-19 45-19t45 19l166 165q19 19 19 45.5t-19 45.5z"/></svg>
+                <li class="food__item">French Toast
+                    <span class="food_price">$3.50</span>
+                    <button class="add__food">Add To Cart</button>
+                </li>
+                <li class="food__item">French Toast with Bacon
+                    <span class="food_price">$4.50</span>
+                    <button class="add__food">Add To Cart</button>
+                </li>
+                <li class="food__item">French Toast with Kielbasa
+                    <span class="food_price">$5.50</span>
+                    <button class="add__food">Add To Cart</button>
+                </li>
+                <li class="food__item">French Toast with Sausage
+                    <span class="food_price">$5.25</span>
+                    <button class="add__food">Add To Cart</button>
+                </li>
+                <li class="food__item">Bacon, Egg and Cheese
+                    <span class="food_price">$3.00</span>
+                    <button class="add__food">Add To Cart</button>
+                </li>
+                <li class="food__item">Turkey Bacon, Egg and Cheese
+                    <span class="food_price">$4.00</span>
+                    <button class="add__food">Add To Cart</button>
+                </li>
+                <li class="food__item">Hashbrown Bacon, Egg and Cheese
+                    <span class="food_price">$4.50</span>
+                    <button class="add__food">Add To Cart</button>
                 </li>
             </ul>
         </div>
-        <div class="lunch">
-            <button class="accordion__header">
+        <div class="accordion__item">
+            <button class="accordion__header lunch">
                 Lunch
-                <svg width="32" height="32" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M1683 808l-742 741q-19 19-45 19t-45-19l-742-741q-19-19-19-45.5t19-45.5l166-165q19-19 45-19t45 19l531 531 531-531q19-19 45-19t45 19l166 165q19 19 19 45.5t-19 45.5z"/></svg>
+                <svg width="32" height="32" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M1683 808l-742 741q-19 19-45 19t-45-19l-742-741q-19-19-19-45.5t19-45.5l166-165q19-19 45-19t45 19l531 531 531-531q19-19 45-19t45 19l166 165q19 19 19 45.5t-19 45.5z" />
+                </svg>
             </button>
+            <ul class="accordion__content">
+                <li class="food__item">Cheesesteak
+                    <span class="food_price">$5.00</span>
+                    <button class="add__food">Add To Cart</button>
+                </li>
+                <li class="food__item">Pepperoni Cheesesteak
+                    <span class="food_price">$5.50</span>
+                    <button class="add__food">Add To Cart</button>
+                </li>
+                <li class="food__item">Chicken Cheesesteak
+                    <span class="food_price">$5.50</span>
+                    <button class="add__food">Add To Cart</button>
+                </li>
+                <li class="food__item">Cheeseburger
+                        <span class="food_price">$3.50</span>
+                        <button class="add__food">Add To Cart</button>
+                </li>
+                <li class="food__item">Bacon Cheeseburger
+                        <span class="food_price">$3.50</span>
+                        <button class="add__food">Add To Cart</button>
+                </li>
+                <li class="food__item">Italian Hoagie
+                        <span class="food_price">$5.00</span>
+                        <button class="add__food">Add To Cart</button>
+                </li>
+                <li class="food__item">Turkey Hoagie
+                        <span class="food_price">$5.00</span>
+                        <button class="add__food">Add To Cart</button>
+                </li>
+            </ul>
         </div>
     </section>
     <script src="scripts.js"></script>
 </body>
+
 </html>
