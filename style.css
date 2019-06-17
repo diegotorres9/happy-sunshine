@@ -120,6 +120,11 @@ header {
     max-height: 0;
     overflow: hidden;
     transition: max-height 1.5s ease-out; }
+    .accordion__item .accordion__content h3 {
+      font-size: 32px;
+      font-family: "PT Sans", sans-serif;
+      padding: 1rem 0 0 1rem;
+      background: #217e6c; }
     .accordion__item .accordion__content li {
       display: flex;
       flex-direction: row;
@@ -192,6 +197,7 @@ nav {
   z-index: 1; }
   nav ul li {
     font-size: 24px;
+    font-family: "Open Sans", sans-serif;
     padding: 2rem;
     background: #39cbaf; }
     nav ul li:nth-of-type(2) {
@@ -220,7 +226,7 @@ nav {
     opacity: 0;
     transform: rotate(360deg); } }
 .rotate-chevron-up {
-  animation-duration: 1s;
+  animation-duration: 1.5s;
   animation-name: rotate-chevron-up;
   animation-fill-mode: forwards; }
 
@@ -230,7 +236,7 @@ nav {
   to {
     transform: rotate(180deg); } }
 .rotate-chevron-down {
-  animation-duration: 1s;
+  animation-duration: 1.5s;
   animation-name: rotate-chevron-down;
   animation-fill-mode: forwards; }
 

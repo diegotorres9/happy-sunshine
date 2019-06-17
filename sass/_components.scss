@@ -87,6 +87,13 @@ header {
         max-height: 0;
         overflow: hidden;
         transition: max-height 1.5s ease-out;
+
+        h3 {
+            font-size: 32px;
+            font-family: $ptSans;
+            padding: 1rem 0 0 1rem;
+            background: darken($create-your-own, 20%);
+        }
         li {
             display: flex;
             flex-direction: row;
@@ -177,6 +184,7 @@ nav {
     ul {
         li {
             font-size: 24px;
+            font-family: $openSans;
             padding: 2rem;
             background: $login-btn-color;
             &:nth-of-type(2) {
