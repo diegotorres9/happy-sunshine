@@ -120,11 +120,14 @@ header {
     max-height: 0;
     overflow: hidden;
     transition: max-height 1.5s ease-out; }
-    .accordion__item .accordion__content h3 {
+    .accordion__item .accordion__content .food_type {
       font-size: 32px;
       font-family: "PT Sans", sans-serif;
       padding: 1rem 0 0 1rem;
-      background: #217e6c; }
+      background: #217e6c;
+      border: none;
+      color: #fff;
+      padding-bottom: 1rem; }
     .accordion__item .accordion__content li {
       display: flex;
       flex-direction: row;

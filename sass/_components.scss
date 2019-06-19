@@ -88,11 +88,14 @@ header {
         overflow: hidden;
         transition: max-height 1.5s ease-out;
 
-        h3 {
+        .food_type{
             font-size: 32px;
             font-family: $ptSans;
             padding: 1rem 0 0 1rem;
             background: darken($create-your-own, 20%);
+            border: none;
+            color: #fff;
+            padding-bottom: 1rem;
         }
         li {
             display: flex;
